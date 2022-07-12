@@ -1,0 +1,10 @@
+type Query{
+    findUserWithName(name: String!) :User
+    hello:String
+}
+
+type Mutation{
+    saveNewUser(user: UserInput) : User
+    updateExistingUser(user: UserInput!): User
+}
+

@@ -1,0 +1,7 @@
+type response{
+    timeStamp: String
+    httpStatusCode: Int
+    httpStatus: String
+    reason: String
+    message: String
+}

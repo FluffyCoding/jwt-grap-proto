@@ -1,0 +1,18 @@
+directive @auth(role : String!) on FIELD_DEFINITION
+directive @dateFormat on FIELD_DEFINITION
+
+type User{
+    id: ID
+    username: String
+    password: String
+    email: String
+    isNotLocked: Boolean
+}
+
+input UserInput{
+    id: ID
+    username: String!
+    password: String!
+    email: String!
+    isNotLocked: Boolean!
+}
